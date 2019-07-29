@@ -39,6 +39,7 @@ PRODUCT_COPY_FILES += \
 	device/phh/treble/vndk.rc:system/etc/init/vndk.rc \
 	device/phh/treble/ld.config.26.txt:system/etc/ld.config.26.txt \
 	device/phh/treble/ld.config.27.txt:system/etc/ld.config.27.txt \
+	device/phh/treble/ld.config.hi3650.txt:system/etc/ld.config.hi3650.txt
 
 #USB Audio
 PRODUCT_COPY_FILES += \
@@ -77,6 +78,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/phh/treble/files/samsung-gpio_keys.kl:system/phh/samsung-gpio_keys.kl \
 	device/phh/treble/files/samsung-sec_touchscreen.kl:system/phh/samsung-sec_touchscreen.kl
+
+PRODUCT_COPY_FILES += \
+	device/phh/treble/files/cam.hi3650.sh:system/bin/cam.hi3650.sh \
+	device/phh/treble/files/cameraserver-hi3650.sh:system/bin/cameraserver-hi3650.sh \
+	device/phh/treble/files/camerainit-hi3650.sh:system/bin/camerainit-hi3650.sh \
+	device/phh/treble/files/cameradaemon-hi3650.sh:system/bin/cameradaemon-hi3650.sh
 
 #MTK incoming SMS fix
 PRODUCT_PACKAGES += \
