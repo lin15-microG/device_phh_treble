@@ -40,3 +40,5 @@ service hi3650_camerainit /system/bin/camerainit-hi3650.sh
 
 on property:ro.hardware=hi3650 && property:sys.boot_completed=1
 	start hi3650_camerainit
+	start hi3650_cameradaemon
+
